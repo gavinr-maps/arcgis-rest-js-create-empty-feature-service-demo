@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Create Empty Feature Service</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script
+      type="module"
+      src="https://js.arcgis.com/calcite-components/2.7.1/calcite.esm.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://js.arcgis.com/calcite-components/2.7.1/calcite.css"
+    />
+  </head>
+  <body>
+    <div id="loginButtonWrapper">
+      <calcite-button id="loginButton">Login</calcite-button>
+    </div>
+    <div id="createFeatureServiceWrapper" class="hidden">
+      <form>
+        <calcite-input
+          placeholder="Name your Feature Service"
+          id="featureServiceNameInput"
+        ></calcite-input>
+        <calcite-button id="createFeatureServiceButton"
+          >Create Feature Service</calcite-button
+        >
+      </form>
+      <div id="results"></div>
+    </div>
+    <script src="main.js" type="module"></script>
+  </body>
+</html>
