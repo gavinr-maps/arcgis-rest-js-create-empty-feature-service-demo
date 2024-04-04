@@ -5,11 +5,10 @@ import {
 } from "https://cdn.skypack.dev/@esri/arcgis-rest-feature-service@4";
 
 const oAuthOptions = {
-  // https://mdc.maps.arcgis.com/home/item.html?id=a408e6dc251840bb8912968336852971#settings
+  // https://prof-services.maps.arcgis.com/home/item.html?id=bd2f2c00808747c2a5bee10040f0cc31#overview
   clientId: "5zExhoFVwOyHuQaL",
   redirectUri: window.location.origin,
   popup: false,
-  style: "dark",
 };
 
 const createFS = async (id, featureServiceName) => {
