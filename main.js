@@ -7,7 +7,7 @@ import {
 const oAuthOptions = {
   // https://prof-services.maps.arcgis.com/home/item.html?id=bd2f2c00808747c2a5bee10040f0cc31#overview
   clientId: "5zExhoFVwOyHuQaL",
-  redirectUri: window.location.origin,
+  redirectUri: window.location.href.split("?")[0],
   popup: false,
 };
 
